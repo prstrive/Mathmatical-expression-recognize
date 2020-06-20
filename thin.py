@@ -85,7 +85,7 @@ if __name__ == "__main__":
              1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, \
              1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0]
 
-    image = cv2.imread('C:/Users/Pengr/Desktop/Test3.jpg')
+    image = cv2.imread("test image's path ")
     img_gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
     ret, iTwo = cv2.threshold(img_gray, 0, 1, cv2.THRESH_BINARY_INV + cv2.THRESH_OTSU)
     # iTwo = Two(img_gray)

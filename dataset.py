@@ -131,7 +131,7 @@ class Dataset():
 
 
 if __name__ == "__main__":
-    dataset = Dataset(dataCount=20,filename="E:/PyCharm/MER_2/data/symbols5_5_z.data")
+    dataset = Dataset(dataCount=20,filename="./data/symbols5_5_z.data")
     for i in range(100):
         sym1 = np.array(dataset.trainData["image"][100*i]).reshape((dataset.imgSize,dataset.imgSize))
         lab1 = global_config.INFTYCDB_3_SHAPES[np.argmax(dataset.trainData["lable"][100*i])]

@@ -4,7 +4,7 @@
 # import numpy as np
 # import global_config
 
-# dataset = Dataset(dataCount=0,filename="E:/PyCharm/MER_2/data/symbols5_3.data")
+# dataset = Dataset(dataCount=0,filename="./data/symbols5_3.data")
 # for i in range(10):
 #     sym1 = np.array(dataset.trainData["image"][500*i])
 #     syns, ps = symClasser.predict([sym1])

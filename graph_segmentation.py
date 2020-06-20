@@ -562,7 +562,7 @@ def getSegmentation(binary_img,ori_image=None):
     return unKnownSymbols,knownSymbolsInfo,points
 
 if __name__ == "__main__":
-    ori_img = cv2.imread("C:/Users/Pengr/Desktop/Testfloat2.png")
+    ori_img = cv2.imread("your test iamge's path")
     binary_img = img_process.getBinaryImg(ori_img)
     getSegmentation(binary_img,ori_img)
     # plt.imshow(binary_img, cmap="Greys", interpolation="None")

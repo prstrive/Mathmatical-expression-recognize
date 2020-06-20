@@ -12,9 +12,9 @@ class InftyCDB():
     def __init__(self,filename,imgSize=global_config.IMG_SIZE):
         self.imgSize = imgSize
         self.filename = filename
-        self.oriImgPath = "E:/PyCharm/MER_2/data/InftyCDB-3/InftyCDB-3-A/images/"
-        self.ocrCodeListPath = "E:/PyCharm/MER_2/data/InftyCDB-3/OcrCodeList.txt"
-        self.charInfoDB_3_A_InfoPath = "E:/PyCharm/MER_2/data/InftyCDB-3/InftyCDB-3-A/CharInfoDB-3-A_Info.csv"
+        self.oriImgPath = "./data/InftyCDB-3/InftyCDB-3-A/images/"
+        self.ocrCodeListPath = "./data/InftyCDB-3/OcrCodeList.txt"
+        self.charInfoDB_3_A_InfoPath = "./data/InftyCDB-3/InftyCDB-3-A/CharInfoDB-3-A_Info.csv"
         self.originalShapes = global_config.INFTYCDB_3_SHAPES
         # self.currLen = 0
         # self.dataLen = 23500
@@ -34,7 +34,7 @@ class InftyCDB():
         file = open(self.filename, "a")
         for shape in self.originalShapes:
             if shape=="sqrt":
-                for maindir, subdir, file_name_list in os.walk("E:/PyCharm/MER_2/data/allShapes/sqrt"):
+                for maindir, subdir, file_name_list in os.walk("./data/allShapes/sqrt"):
                     for file_name in file_name_list:
                         file_path = os.path.join(maindir, file_name)
                         oriImg = cv2.imread(file_path)
@@ -163,7 +163,7 @@ class InftyCDB():
 
 
 if __name__ == "__main__":
-    datas = InftyCDB(filename="E:/PyCharm/MER_2/data/symbols2_test.data")
+    datas = InftyCDB(filename="./data/symbols2_test.data")
     # datas.createImgData()
 
     # datas.loadData()
@@ -177,7 +177,7 @@ if __name__ == "__main__":
         plt.imshow(img, cmap="Greys", interpolation="None")
         plt.show()
 
-    # for line in open("E:/PyCharm/MER_2/data/symbols3_train.data","r"):
+    # for line in open("./data/symbols3_train.data","r"):
     #     line = line.strip("\n")  # 删除数据中的换行符
     #     data = json.loads(line)
     #     img = np.array(data["image"]).reshape((global_config.IMG_SIZE,global_config.IMG_SIZE))

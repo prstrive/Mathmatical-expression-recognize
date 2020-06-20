@@ -162,12 +162,12 @@ class SymbolClasserCNN():
 #network/mer_net_InftyCDB_OneWeight_AddLevels4_add_i_greater.ckpt补上大于等于符号
 
 if __name__ == "__main__":
-    # datas = InftyCDB(filename="E:/PyCharm/MER_2/data/symbols4.data")
+    # datas = InftyCDB(filename="./data/symbols4.data")
     # datas.loadData()
-    datas = Dataset(filename="E:/PyCharm/MER_2/data/symbols5_4_i.data")
+    datas = Dataset(filename="./data/symbols5_4_i.data")
     model = SymbolClasserCNN(datas=datas,model="network/mer_net_InftyCDB_OneWeight_AddLevels5_1.ckpt")
     model.train(modelSave="network/mer_net_InftyCDB_OneWeight_AddLevels5_1.ckpt")
-    # datas = Dataset(filename="E:/PyCharm/MER_2/data/number_symbols.data")
+    # datas = Dataset(filename="./data/number_symbols.data")
     # for i in range(10):
     #     model.predict(model.datas.test.images[i:i+1],"network/mer_net_InftyCDB.ckpt")
     #     print("真实结果为:",np.argmax(model.datas.test.labels[i]))
