@@ -5,7 +5,7 @@ import cv2
 import global_config
 import matplotlib.pyplot as plt
 
-imgPath = "C:/Users/Pengr/Desktop/Testsum2.png"
+imgPath = "your test image's path"
 
 ori_image = cv2.imread(imgPath)
 binary_img = img_process.getBinaryImg(ori_image)
