@@ -9,7 +9,7 @@ from img_process import getBinaryImg
 
 class Dataset():
     # 图像生成为正方形
-    def __init__(self,dataCount=0,size=100,filename="E:/PyCharm/MER_2/data/symbols.data",originalPath="E:/PyCharm/MER_2/data/allShapes"):
+    def __init__(self,dataCount=0,size=100,filename="./data/symbols.data",originalPath="./data/allShapes"):
         self.filename = filename
         self.imgSize = size
         self.originalPath = originalPath
