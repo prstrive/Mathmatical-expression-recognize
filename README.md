@@ -1,5 +1,5 @@
 # Mathmatical-expression-recognize
-Simple realization of mathmatical expression recognize in tensorflow
+Convert the printed mathematical expression in the picture to latex by tensorflow.
 
 ### Start
 1. Train the symbol classify CNN from `symbol_classer_cnn.py`.
